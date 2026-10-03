@@ -1,0 +1,5 @@
+interface:
+  display_name: "同人角色扮演设计skill"
+  short_description: "提供还原与人物两种模式，支持世界书融合、人物结构适配及 MVU 配置"
+policy:
+  allow_implicit_invocation: true
