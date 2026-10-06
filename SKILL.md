@@ -104,6 +104,8 @@ Deliver a complete merged JSON containing the preserved and integrated content. 
 
 Before constructing the export, consult the target installation's export format or current SillyTavern source/documentation for field names and behavior. Use descriptive entry titles, distinctive character and location names and aliases for retrieval, and deliberate activation settings. First match relevant entries, then apply their content-selection rules.
 
+For every new entry, including entries added during integration, explicitly set `excludeRecursion: true` (not activated by other entries through recursion) and `preventRecursion: true` (does not recursively trigger other entries) by default. Set either flag to `false` only when a deliberately designed recursive dependency requires it, relaxing only the necessary flag. When merging, preserve the recursion settings of untouched entries.
+
 Reference material, source links, provenance, and citation markers belong only in external working notes. Any guidance the model must obey belongs in rendered content or an active instruction entry.
 
 Deliver the worldbook file with a concise description of coverage, the selected control method, and content-specific configuration changes. When prompt-based stage conditions are used, explain that they rely on model interpretation. Report actual completion and limitations without implying an import or runtime execution occurred. Run import, runtime, or other validation only when the user explicitly requests it.
